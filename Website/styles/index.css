@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    text-align: center;
+}
+
+/*header styles*/
+header {
+    display: flex;
+    position:fixed;
+    width: 100%;
+    height: 35px;
+    top:0;
+    left:0;
+    right:0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.textlogo1 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 2vw;
+}
+
+/*nav styles*/
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav ul li a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+#logo img {
+    max-width: 100px;
+    height: auto;
+}
+/*end nav*/
+/*end header*/
+
+/*main styles*/
+main {
+    margin: 0;
+    margin-top: 35px;
+    padding: 0;
+    width: 100%;
+}
+
+section {
+    height: 60vh;
+    margin: 0;
+    padding: 1px;
+    width: 100%;
+}
+/*welcome section*/
+#welcomesection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/*end welcome section*/
+/*end main*/
+
+/*footer styles*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 20px;
+}
+
+#socialmedia ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#socialmedia ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#socialmedia ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#footerlogo img {
+    max-width: 50px;
+    height: auto;
+}
+/*end footer*/
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        height: 20px;
+    }
+
+    #nav{
+        padding-right: 2vw;
+    }
+
+    #nav * {
+        margin: 0;
+        padding: 0;
+    }
+    #nav ul li {
+        font-size: 0.8rem;
+        margin: 10px 0;
+    }
+
+    .textlogo1 {
+        font-size: 1rem;
+    }
+
+    #socialmedia ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
